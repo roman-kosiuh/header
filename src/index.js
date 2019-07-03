@@ -389,11 +389,14 @@ class Header {
      * Define default level value
      * @type {number}
      */
-    let level = 2;
+    let level = 3;
 
     switch (content.tagName) {
       case 'H1':
-        level = 1;
+        level = 2;
+        break;
+      case 'H2':
+        level = 2;
         break;
     }
 
